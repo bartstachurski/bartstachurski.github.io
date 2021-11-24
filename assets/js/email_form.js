@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch("https://sheltered-reaches-40837.herokuapp.com/api/emails", {
       method: "POST",
       body: JSON.stringify(data),
-      origin: "https://bartstachurski.github.io/",
       headers: { "Content-type": "application/json; charset=UTF-8" }
     })
       .then(response => response.json()) 
